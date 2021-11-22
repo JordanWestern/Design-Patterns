@@ -1,5 +1,6 @@
 ﻿namespace SimpleFactoryPattern;
 
+// The 'Ferrari' implementation based on the ICar interface
 internal class Ferrari : ICar
 {
     public Ferrari()

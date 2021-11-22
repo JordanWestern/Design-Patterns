@@ -1,5 +1,6 @@
 ﻿namespace SimpleFactoryPattern;
 
+// The interface your objects can be contracted to that require various implementations
 public interface ICar
 {
     public string Manafacturer { get; }

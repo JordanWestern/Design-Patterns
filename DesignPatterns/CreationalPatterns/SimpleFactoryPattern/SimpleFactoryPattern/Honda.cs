@@ -1,5 +1,6 @@
 ﻿namespace SimpleFactoryPattern;
 
+// The 'Honda' implementation based on the ICar interface
 internal class Honda : ICar
 {
     public Honda()
