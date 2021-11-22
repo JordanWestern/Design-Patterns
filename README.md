@@ -1,6 +1,6 @@
 # Design-Patterns
 
-A repository to showcase examples of design patterns
+A repository to showcase examples of design patterns in C#
 
 ## Patterns
 
