@@ -2,9 +2,11 @@
 
 ## Purpose
 
-The mediator pattern is a behavioural pattern that aims to simplify communication with many objects that need to communicate with one another, i.e., the mediator.
+The mediator pattern is a behavioural pattern that aims to simplify communication with many objects that need to communicate with one another.
 
-In this example, we have a chat room; this is our mediator. The chat rooms job is to handle communication with any ```IUser``` object which is subscribed to the chat room iteself.
+In this example, we have a chat room; this is our mediator. The chat rooms' job is to handle communication with any ```IUser``` object which is subscribed to the chat room iteself.
+
+This means that any communication is handled soley by our mediator, and not directly between objects, reducing spaghetti code and confusing references between multiple objects that need to talk to one another.
 
 ```c#
 public interface IChatRoom
