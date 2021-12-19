@@ -9,6 +9,7 @@ Each project has a working example, so to see how the pattern is used, take a lo
 ### Creational Patterns
 
 - [Simple Factory Pattern](./DesignPatterns/CreationalPatterns/SimpleFactoryPattern)
+- [Abstract Factory Pattern](./DesignPatterns/CreationalPatterns/AbstractFactoryPattern)
 
 ### Behavioural Patterns
 
