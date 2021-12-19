@@ -2,7 +2,7 @@
 {
     public interface IUser
     {
-        public string Name { get; set; }
+        public string Name { get; }
 
         void SendMessage(string message);
 

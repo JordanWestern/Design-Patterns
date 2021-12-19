@@ -2,8 +2,8 @@
 
 IChatRoom chatRoom = new ChatRoom();
 
-IUser userOne = new User(chatRoom) { Name = "David" };
-IUser userTwo = new User(chatRoom) { Name = "Paul" };
+IUser userOne = new User("David", chatRoom);
+IUser userTwo = new User("Paul", chatRoom);
 
 chatRoom.Subscribe(userOne);
 chatRoom.Subscribe(userTwo);
@@ -11,11 +11,12 @@ chatRoom.Subscribe(userTwo);
 Console.WriteLine("Enter your name: ");
 var name = Console.ReadLine();
 
-IUser userThree = new User(chatRoom) { Name = name };
+IUser userThree = new User(name!, chatRoom);
+
 chatRoom.Subscribe(userThree);
 
 while (true)
 {
     Console.WriteLine("Write message: ");
-    chatRoom.Notify(userThree, Console.ReadLine()); 
+    chatRoom.Notify(userThree, Console.ReadLine()!); 
 }

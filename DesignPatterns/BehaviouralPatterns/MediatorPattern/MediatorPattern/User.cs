@@ -2,7 +2,7 @@
 
 public class User : BaseUser
 {
-    public User(IChatRoom humanResources) : base(humanResources)
+    public User(string name, IChatRoom chatRoom) : base(name, chatRoom)
     {
     }
 }
