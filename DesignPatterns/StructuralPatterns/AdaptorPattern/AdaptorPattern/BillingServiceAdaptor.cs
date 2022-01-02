@@ -1,6 +1,6 @@
 ﻿namespace AdaptorPattern;
 
-public class BillingServiceAdaptor : IBillingTarget
+public class BillingServiceAdaptor : IBillingServiceTarget
 {
     private readonly AdapteeBillingService adapteeBillingService;
 

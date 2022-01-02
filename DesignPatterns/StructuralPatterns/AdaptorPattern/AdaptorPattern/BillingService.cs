@@ -1,6 +1,6 @@
 ﻿namespace AdaptorPattern;
 
-public class BillingService : IBillingTarget
+public class BillingService : IBillingServiceTarget
 {
     public void ProcessEmployeeMonthlyPayments(Employee[] employees)
     {

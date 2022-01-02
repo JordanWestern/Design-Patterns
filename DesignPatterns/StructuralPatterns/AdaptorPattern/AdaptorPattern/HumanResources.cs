@@ -3,17 +3,17 @@
 public class HumanResources
 {
     private readonly Employee[] employees;
-    private readonly IBillingTarget billingTarget;
+    private readonly IBillingServiceTarget billingService;
 
-    public HumanResources(IBillingTarget billingSystem)
+    public HumanResources(IBillingServiceTarget billingService)
     {
-        this.billingTarget = billingSystem;
+        this.billingService = billingService;
         this.employees = this.GetEmployees();
     }
 
     public void PayEmployees()
     {
-        this.billingTarget.ProcessEmployeeMonthlyPayments(this.GetActiveEmployees());
+        this.billingService.ProcessEmployeeMonthlyPayments(this.GetActiveEmployees());
     }
 
     private Employee[] GetEmployees()

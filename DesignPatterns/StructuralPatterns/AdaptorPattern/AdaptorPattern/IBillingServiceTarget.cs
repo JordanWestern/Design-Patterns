@@ -1,6 +1,6 @@
 ﻿namespace AdaptorPattern;
 
-public interface IBillingTarget
+public interface IBillingServiceTarget
 {
     void ProcessEmployeeMonthlyPayments(Employee[] employees);
 }

@@ -10,7 +10,7 @@
 
 //--New billing service implementation using adaptor--
 AdapteeBillingService adapteeBillingService = new AdapteeBillingService();
-IBillingTarget billingTarget = new BillingServiceAdaptor(adapteeBillingService);
+IBillingServiceTarget billingTarget = new BillingServiceAdaptor(adapteeBillingService);
 
 HumanResources humanResources = new HumanResources(billingTarget);
 
